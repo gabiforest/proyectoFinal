@@ -1,5 +1,6 @@
 .header{
     background-image: $backone;
+    opacity: 0.9;
 }
 .header nav{
     background-image: $backone;
@@ -9,4 +10,14 @@
 }
 .active{
     font-weight: bold ;
+}
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar img{
+    width: 150px;
+    height: 150px;
 }

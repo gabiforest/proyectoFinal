@@ -5,7 +5,8 @@
   margin-bottom: 5px; }
 
 .header {
-  background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%); }
+  background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+  opacity: 0.9; }
 
 .header nav {
   background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%); }
@@ -15,6 +16,16 @@
 
 .active {
   font-weight: bold; }
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.navbar img {
+  width: 150px;
+  height: 150px; }
 
 .footer {
   background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%); }
@@ -32,6 +43,9 @@
 .footer img {
   width: 25px;
   height: 25px; }
+
+.main {
+  margin-top: 220px; }
 
 .principal {
   animation-duration: 2s;
