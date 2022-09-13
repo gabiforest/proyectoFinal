@@ -1,10 +1,13 @@
+//contenedor main para todos los html
 .main{
     margin-top: 220px;
 }
+//clase de animacion para index.html, nosotros.html y productos.html
 .principal {
     animation-duration: 2s;
     animation-name: slidein;
 }
+//galeria de productos animacion y medidas
 .container img{
     @extend %medidasImg;
 }
@@ -15,12 +18,19 @@
     border: $second solid 2px;
     border-radius: 5px;
 }
-.text-primary{
-    font-weight: bold;
+//modificacion de etiqueta strong
+strong{
+    font-weight:normal;
 }
+//clases para texto de todos los htmls
 .texto{
-    color: $primary;
+    color: $text;
 }
+.textos{
+    color: $text;
+    font-size: x-large;
+}
+//agregado de hover Fotos novedades.html 
 .fotoNov:hover{
     -webkit-transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
@@ -28,14 +38,17 @@
     transform-style: preserve-3d;
     transition-duration: 2s;    
 }
+//tabla de contacto.html
 .table{
     border: solid $third 5px;
     color: $second;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+//formulario de contacto.html y agregado de clase en boton de nosotros.html con hover
 .color{
     @include colors($second, $backtwo);
+    border: 3px $third solid;
 }
 .color a{
     text-decoration: none;
@@ -45,9 +58,13 @@
 .color:hover{
     @include colors(black,white);
 }
-.form-label{
-    color:$second;
+//titulo principal de contacto.html
+.tit-cont{
+    font-size: 50px;
+    font-weight: bold;
+    color: $second;
 }
+//hover para todos los h1 y h2 
 .h2:hover{
     transform: rotate(360deg);
     transition-duration: 1s;
@@ -57,12 +74,13 @@
     animation-duration: 3s;
     animation-delay: 0s;
 }
+//personalizacion de imagenes de nosotros
 .imgCar{
         width: 250px;
         height: 250px;
         margin: 3px;
     }
-/* keyframe */
+/* keyframes */
 @keyframes slidein{
     from {
       margin-left: 100%;

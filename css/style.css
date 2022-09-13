@@ -58,11 +58,15 @@
   border: #ee5c74 solid 2px;
   border-radius: 5px; }
 
-.text-primary {
-  font-weight: bold; }
+strong {
+  font-weight: normal; }
 
 .texto {
-  color: #d63384; }
+  color: black; }
+
+.textos {
+  color: black;
+  font-size: x-large; }
 
 .fotoNov:hover {
   -webkit-transform: rotateY(180deg);
@@ -79,7 +83,8 @@
 
 .color {
   color: #ee5c74;
-  background-color: #fdcbf1; }
+  background-color: #fdcbf1;
+  border: 3px #16ecb7c7 solid; }
 
 .color a {
   text-decoration: none;
@@ -90,7 +95,9 @@
   color: black;
   background-color: white; }
 
-.form-label {
+.tit-cont {
+  font-size: 50px;
+  font-weight: bold;
   color: #ee5c74; }
 
 .h2:hover {
@@ -107,7 +114,7 @@
   height: 250px;
   margin: 3px; }
 
-/* keyframe */
+/* keyframes */
 @keyframes slidein {
   from {
     margin-left: 100%;
