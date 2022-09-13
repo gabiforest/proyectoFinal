@@ -45,7 +45,8 @@
   height: 25px; }
 
 .main {
-  margin-top: 220px; }
+  margin-top: 220px;
+  min-height: 60vh; }
 
 .principal {
   animation-duration: 2s;
