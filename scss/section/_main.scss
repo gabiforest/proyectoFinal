@@ -1,8 +1,51 @@
 //contenedor main para todos los html
 .main{
     margin-top: 220px;
-    min-height: 65vh;
+    min-height: 86vh;
 }
+//container index
+.containerIndex {  
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 15% 85%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "tit tit"
+      "texto1 fot";
+    margin-top: 3px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+// clases del grid de index.html
+.tit { 
+    grid-area: tit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    h1{
+        font-size: 75px;
+        color: $titles;
+        animation-name: title;
+        animation-duration: 3s;
+    }
+}  
+.texto1 { 
+    grid-area: texto1;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    margin-left: 10px;
+} 
+.fot {
+    grid-area: fot;
+    max-width: 100%;
+    max-height: 100%;
+    justify-self: center;
+    margin: auto;
+} 
 //clase de animacion para index.html, nosotros.html y productos.html
 .principal {
     animation-duration: 2s;
@@ -23,13 +66,19 @@
 strong{
     font-weight:normal;
 }
-//clases para texto de todos los htmls
-.texto{
-    color: $text;
+//clase titulos productos.html
+.titleProd{
+    color: $titles;
 }
+//clases para texto de todos los htmls
 .textos{
-    color: $text;
-    font-size: x-large;
+    font-size: 45px;
+    color: $color4;
+}
+//clase de titulos h1
+.titulos{
+    font-size: 75px;
+    color: $titles;
 }
 //agregado de hover Fotos novedades.html 
 .fotoNov:hover{
@@ -50,14 +99,35 @@ strong{
 .color{
     @include colors($second, $backtwo);
     border: 3px $third solid;
+    :hover{
+        @include colors($text,white);
+    }
+    a{
+        text-decoration: none;
+        font-weight: bold;
+        color: $second;
+    }
 }
-.color a{
-    text-decoration: none;
-    color: $third;
-    font-weight: bold;
-}
-.color:hover{
-    @include colors(black,white);
+//contenido de nosotros.html
+.nosot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    p{
+        width: 50vw;
+    }
+    .__nosotImg{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        img{
+            width: 250px;
+            height: 250px;
+            margin: 3px;
+        }
+    }
 }
 //titulo principal de contacto.html
 .tit-cont{
@@ -75,12 +145,6 @@ strong{
     animation-duration: 3s;
     animation-delay: 0s;
 }
-//personalizacion de imagenes de nosotros
-.imgCar{
-        width: 250px;
-        height: 250px;
-        margin: 3px;
-    }
 /* keyframes */
 @keyframes slidein{
     from {
@@ -102,5 +166,65 @@ strong{
     }
     100% {
         transfom:rotateX(360deg);
+    }
+}
+@keyframes title{
+    0%{
+        font-size: 350px;
+        text-shadow: 1px 1px 2px #C98986, 0 0 1em #f329f3, 0 0 0.2em #f329f3;
+    }   
+    100%{
+        text-shadow: 1px 1px 2px #C98986, 0 0 1em #f329f3, 0 0 0.2em #f329f3;
+    }
+}
+//media queries - adaptando grid para que sea responsive
+@media (min-width: 280px) and (max-width:769px){
+    .tit{
+        margin-bottom: auto;
+    }
+    .texto1{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .fot{
+        margin: auto;
+    }
+    .textos{
+        text-align: center;
+        font-size: 20px;
+    }
+}
+@media (max-width:600px){
+    //modificacion grid de index
+    .containerIndex{
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 15% 40% 45%;
+        gap: 0px 0px;
+        grid-auto-flow: column;
+        grid-template-areas:
+            "tit "
+            "texto1 "
+            "fot "; 
+        justify-content: center;
+        }
+    //modificacion clases internas de grid
+    .tit{
+        h1{
+            font-size: 40px;
+            animation: none;
+    }
+    }
+    .texto1{
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .fot{
+        max-width: 100%;
+    }
+    .textos{
+        text-align: center;
+        font-size: 20px;
     }
 }

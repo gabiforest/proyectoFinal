@@ -1,12 +1,12 @@
 .header{
     background-image: $backone;
     opacity: 0.9;
-}
-.header nav{
-    background-image: $backone;
-}
-.header a:hover{
-    color: $third;
+    nav{
+        background-image: $backone;
+    }
+    a:hover{
+        color: #c98986;
+    }
 }
 .active{
     font-weight: bold ;
@@ -16,8 +16,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-}
-.navbar img{
-    width: 150px;
-    height: 150px;
+    img{
+        width: 150px;
+        height: 150px;
+    }
 }

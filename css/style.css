@@ -7,12 +7,10 @@
 .header {
   background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
   opacity: 0.9; }
-
-.header nav {
-  background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%); }
-
-.header a:hover {
-  color: #16ecb7c7; }
+  .header nav {
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%); }
+  .header a:hover {
+    color: #c98986; }
 
 .active {
   font-weight: bold; }
@@ -22,10 +20,9 @@
   position: fixed;
   top: 0;
   width: 100%; }
-
-.navbar img {
-  width: 150px;
-  height: 150px; }
+  .navbar img {
+    width: 150px;
+    height: 150px; }
 
 .footer {
   background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%); }
@@ -38,7 +35,7 @@
   color: black; }
 
 .footer a:hover {
-  color: #16ecb7c7; }
+  color: #C179B9; }
 
 .footer img {
   width: 25px;
@@ -46,7 +43,45 @@
 
 .main {
   margin-top: 220px;
-  min-height: 65vh; }
+  min-height: 86vh; }
+
+.containerIndex {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 15% 85%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "tit tit" "texto1 fot";
+  margin-top: 3px;
+  margin-bottom: 5px;
+  justify-content: space-between; }
+
+.tit {
+  grid-area: tit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold; }
+  .tit h1 {
+    font-size: 75px;
+    color: #502274;
+    animation-name: title;
+    animation-duration: 3s; }
+
+.texto1 {
+  grid-area: texto1;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  margin-left: 10px; }
+
+.fot {
+  grid-area: fot;
+  max-width: 100%;
+  max-height: 100%;
+  justify-self: center;
+  margin: auto; }
 
 .principal {
   animation-duration: 2s;
@@ -62,12 +97,16 @@
 strong {
   font-weight: normal; }
 
-.texto {
-  color: black; }
+.titleProd {
+  color: #502274; }
 
 .textos {
-  color: black;
-  font-size: x-large; }
+  font-size: 45px;
+  color: #A42CD6; }
+
+.titulos {
+  font-size: 75px;
+  color: #502274; }
 
 .fotoNov:hover {
   -webkit-transform: rotateY(180deg);
@@ -77,7 +116,7 @@ strong {
   transition-duration: 2s; }
 
 .table {
-  border: solid #16ecb7c7 5px;
+  border: solid #C179B9 5px;
   color: #ee5c74;
   margin-top: 5px;
   margin-bottom: 5px; }
@@ -85,16 +124,31 @@ strong {
 .color {
   color: #ee5c74;
   background-color: #fdcbf1;
-  border: 3px #16ecb7c7 solid; }
+  border: 3px #C179B9 solid; }
+  .color :hover {
+    color: black;
+    background-color: white; }
+  .color a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ee5c74; }
 
-.color a {
-  text-decoration: none;
-  color: #16ecb7c7;
-  font-weight: bold; }
-
-.color:hover {
-  color: black;
-  background-color: white; }
+.nosot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify; }
+  .nosot p {
+    width: 50vw; }
+  .nosot .__nosotImg {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .nosot .__nosotImg img {
+      width: 250px;
+      height: 250px;
+      margin: 3px; }
 
 .tit-cont {
   font-size: 50px;
@@ -109,11 +163,6 @@ strong {
   animation-name: girar;
   animation-duration: 3s;
   animation-delay: 0s; }
-
-.imgCar {
-  width: 250px;
-  height: 250px;
-  margin: 3px; }
 
 /* keyframes */
 @keyframes slidein {
@@ -131,6 +180,47 @@ strong {
     transform: rotate(360deg); }
   100% {
     transfom: rotateX(360deg); } }
+
+@keyframes title {
+  0% {
+    font-size: 350px;
+    text-shadow: 1px 1px 2px #C98986, 0 0 1em #f329f3, 0 0 0.2em #f329f3; }
+  100% {
+    text-shadow: 1px 1px 2px #C98986, 0 0 1em #f329f3, 0 0 0.2em #f329f3; } }
+
+@media (min-width: 280px) and (max-width: 769px) {
+  .tit {
+    margin-bottom: auto; }
+  .texto1 {
+    margin-top: 3px;
+    margin-bottom: 3px; }
+  .fot {
+    margin: auto; }
+  .textos {
+    text-align: center;
+    font-size: 20px; } }
+
+@media (max-width: 600px) {
+  .containerIndex {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 15% 40% 45%;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    grid-template-areas: "tit " "texto1 " "fot ";
+    justify-content: center; }
+  .tit h1 {
+    font-size: 40px;
+    animation: none; }
+  .texto1 {
+    max-width: 100%;
+    margin-left: 0;
+    text-align: center; }
+  .fot {
+    max-width: 100%; }
+  .textos {
+    text-align: center;
+    font-size: 20px; } }
 
 * {
   padding: 0;
