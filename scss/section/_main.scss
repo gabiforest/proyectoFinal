@@ -39,13 +39,6 @@ strong{
     transform-style: preserve-3d;
     transition-duration: 2s;    
 }
-//tabla de contacto.html
-.table{
-    border: solid $third 5px;
-    color: $second;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
 //formulario de contacto.html y agregado de clase en boton de nosotros.html con hover
 .color{
     @include colors($second, $backtwo);
@@ -81,6 +74,21 @@ strong{
         height: 250px;
         margin: 3px;
     }
+//tabla de contacto.html
+.table{
+    border: solid $third 5px;
+    color: $second;
+    display: block;
+    margin: 0 auto;
+    width: 50vw;
+    .__body {
+        td{
+        text-align: center;
+        margin: 0 auto;
+        width: 50vw;
+        }
+    }    
+}
 /* keyframes */
 @keyframes slidein{
     from {

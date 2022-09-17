@@ -76,12 +76,6 @@ strong {
   transform-style: preserve-3d;
   transition-duration: 2s; }
 
-.table {
-  border: solid #16ecb7c7 5px;
-  color: #ee5c74;
-  margin-top: 5px;
-  margin-bottom: 5px; }
-
 .color {
   color: #ee5c74;
   background-color: #fdcbf1;
@@ -114,6 +108,17 @@ strong {
   width: 250px;
   height: 250px;
   margin: 3px; }
+
+.table {
+  border: solid #16ecb7c7 5px;
+  color: #ee5c74;
+  display: block;
+  margin: 0 auto;
+  width: 50vw; }
+  .table .__body td {
+    text-align: center;
+    margin: 0 auto;
+    width: 50vw; }
 
 /* keyframes */
 @keyframes slidein {
