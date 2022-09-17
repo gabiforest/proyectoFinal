@@ -1,5 +1,5 @@
 // Import variables
-@import './variables/mixin-extend.scss';
+@import './variables/functions.scss';
 @import './variables/variables.scss';
 // Import section
 @import './section/_header.scss';
@@ -13,7 +13,7 @@
 }
 //imagen de fondo para los body de todo el sitio en el reseteo global
 body{
-    background-color: #8080803f;
+    background-color: $backbody;
     background-image: url('../imagenes/cover.jpg');
     background-attachment: fixed;
     background-repeat: repeat;

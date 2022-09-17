@@ -1,17 +1,17 @@
 .footer{
     background-image: $backone;
-}
-.footer ul li{
-    list-style: none;
-}
-.footer a{
-    text-decoration: none;
-    color: black;
+    a{
+        text-decoration: none;
+        color: $text;
+    }
+    ul li{
+        list-style: none;
+    }
+    img{
+        width: 25px;
+        height: 25px;
+    }
 }
 .footer a:hover{
-    color: $third;
-}
-.footer img{
-    width: 25px;
-    height: 25px;
+    color: $link;
 }

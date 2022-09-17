@@ -5,7 +5,9 @@
         background-image: $backone;
     }
     a:hover{
-        color: #c98986;
+        color: $link;
+        transform: scale(1.2);
+        transition-duration: .5s;
     }
 }
 .active{
