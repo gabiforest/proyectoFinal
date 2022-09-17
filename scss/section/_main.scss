@@ -79,6 +79,7 @@ strong{
 .titulos{
     font-size: 75px;
     color: $titles;
+    text-align: center;
 }
 //agregado de hover Fotos novedades.html 
 .fotoNov:hover{
@@ -147,6 +148,7 @@ strong{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         img{
             width: 250px;
             height: 250px;

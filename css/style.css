@@ -105,7 +105,8 @@ strong {
 
 .titulos {
   font-size: 75px;
-  color: #502274; }
+  color: #502274;
+  text-align: center; }
 
 .fotoNov:hover {
   -webkit-transform: rotateY(180deg);
@@ -164,7 +165,8 @@ strong {
   .nosot .__nosotImg {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center; }
     .nosot .__nosotImg img {
       width: 250px;
       height: 250px;
