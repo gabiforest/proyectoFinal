@@ -11,4 +11,4 @@ En contacto.html las keywords que utilice tienen que ver con los datos
 que puedan necesitar del sitio y una descripcion que hable de una comunicacion.
 Usé palabras repetidas en las keywords porque representan el sitio por igual.
 Agregado de etiqueta strong en varias partes de texto de todas las paginas.
-
+Titulos h1 en todos los html para aumentar las posibilidades en el motor de busqueda.
